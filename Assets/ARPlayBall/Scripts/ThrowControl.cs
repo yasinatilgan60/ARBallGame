@@ -13,17 +13,19 @@ public class ThrowControl : MonoBehaviour {
 	public UnityEvent OnReset;
 
 	private Vector3 direction;
+
 	private Vector3 newBallPosition;
 	private Rigidbody _rigidbody;
 	private bool isHolding;
 	private bool isThrown;
 	private bool isInitialized = false;
+
 	private Vector3 inputPositionCurrent;
 	private Vector2 inputPositionPivot;
 	private Vector2 inputPositionDifference;
+
 	private RaycastHit raycastHit;
-	public GameObject ball2;
-	GameObject clone;
+
 	void Start() {
 		_rigidbody = GetComponent<Rigidbody>();
 		ReadyBall();
@@ -71,29 +73,28 @@ public class ThrowControl : MonoBehaviour {
 		_rigidbody.useGravity = true;
 
 		inputPositionDifference.y = (inputPosition.y - inputPositionPivot.y) / Screen.height * sensivity.y;
+
 		inputPositionDifference.x = (inputPosition.x - inputPositionPivot.x) / Screen.width;
 		inputPositionDifference.x =
-		Mathf.Abs(inputPosition.x - inputPositionPivot.x) / Screen.width * sensivity.x * inputPositionDifference.x;
+			Mathf.Abs(inputPosition.x - inputPositionPivot.x) / Screen.width * sensivity.x * inputPositionDifference.x;
 
 		direction = new Vector3(inputPositionDifference.x, 0f, 1f);
 		direction = Camera.main.transform.TransformDirection(direction);
+
 		_rigidbody.AddForce((direction + Vector3.up) * speed * inputPositionDifference.y);
+
 		isHolding = false;
 		isThrown = true;
-		if (_rigidbody) {
-			Invoke ("ReadyBall", resetBallAfterSeconds);
-		}
-		//
-		
+
+		if (_rigidbody)
+			Invoke("ReadyBall", resetBallAfterSeconds);
 	}
 
-	void Klonlama(){
-		clone = Instantiate (ball2, transform.position, Quaternion.identity) as GameObject;
-	}
 
 
 	void ReadyBall() {
 		CancelInvoke();
+
 		Vector3 screenPosition = new Vector3(0.5f, 0.1f, ballStartZ);
 
 		transform.position = Camera.main.ViewportToWorldPoint(screenPosition);
