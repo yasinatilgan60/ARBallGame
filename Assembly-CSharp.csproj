@@ -52,6 +52,7 @@
      <Compile Include="Assets\ARPlayBall\Scripts\GameDataManager.cs" />
      <Compile Include="Assets\ARPlayBall\Scripts\PlaySoundOnHit.cs" />
      <Compile Include="Assets\ARPlayBall\Scripts\PlayerProgress.cs" />
+     <Compile Include="Assets\ARPlayBall\Scripts\PrefabScripts.cs" />
      <Compile Include="Assets\ARPlayBall\Scripts\ThrowControl.cs" />
      <Compile Include="Assets\ARPlayBall\Scripts\TimedDisable.cs" />
      <Compile Include="Assets\Resources\ball.cs" />

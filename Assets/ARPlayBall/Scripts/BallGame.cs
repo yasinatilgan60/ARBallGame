@@ -22,7 +22,7 @@ public class BallGame : MonoBehaviour {
 		} else {
 			OnGoalLost.Invoke();
 		}
-		//Resets the game
+		// Oyunu sıfırlama islemi gerçekleştirilmektedir.
 		GoalCollisionBehavior.ResetCollision();
 		wonGoal = false;
 	}
