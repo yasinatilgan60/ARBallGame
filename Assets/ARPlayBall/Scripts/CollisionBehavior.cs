@@ -8,11 +8,11 @@ public class CollisionBehavior : MonoBehaviour {
 	public GameObjectEvent OnHitGameObject = new GameObjectEvent();
 	public UnityEvent OnCollision = new UnityEvent();
 
-	// used to make sure that only one event is called
+	//olayın çağırılması için kullanılır.
 	private GameObject lastCollision;
 
 	void Awake() {
-		//disables the renderer in playmode if it wasn't already
+		// Oynatma modunu devre dışı bırakır.
 		MeshRenderer targetMeshRenderer = GetComponent<MeshRenderer>();
 		if (targetMeshRenderer != null)
 			targetMeshRenderer.enabled = false;
@@ -26,7 +26,7 @@ public class CollisionBehavior : MonoBehaviour {
 		}
 	}
 
-	//So that the goal can be a trigger
+	// Tetikleyici kullanılmaktadır.
 	void OnTriggerEnter(Collider collider) {
 		if (lastCollision != collider.gameObject) {
 			OnHitGameObject.Invoke(collider.gameObject);

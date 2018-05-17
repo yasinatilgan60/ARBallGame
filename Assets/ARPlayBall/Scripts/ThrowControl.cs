@@ -5,27 +5,21 @@ using UnityEngine.Events;
 
 public class ThrowControl : MonoBehaviour {
 	public float ballStartZ = 0.5f;
-
 	public Vector2 sensivity = new Vector2(8f, 100f);
 	public float speed = 5f;
 	public float resetBallAfterSeconds = 3f;
-
+	// Kalıcı olarak geri çağırma için UnityEvent kullanılmıştır.
 	public UnityEvent OnReset;
-
 	private Vector3 direction;
-
 	private Vector3 newBallPosition;
 	private Rigidbody _rigidbody;
 	private bool isHolding;
 	private bool isThrown;
 	private bool isInitialized = false;
-
 	private Vector3 inputPositionCurrent;
 	private Vector2 inputPositionPivot;
 	private Vector2 inputPositionDifference;
-
 	private RaycastHit raycastHit;
-
 	void Start() {
 		_rigidbody = GetComponent<Rigidbody>();
 		ReadyBall();
@@ -80,21 +74,18 @@ public class ThrowControl : MonoBehaviour {
 
 		direction = new Vector3(inputPositionDifference.x, 0f, 1f);
 		direction = Camera.main.transform.TransformDirection(direction);
-
+		// Rigidbody'e bir kuvvet ekleme islemi yapılmaktadır.
 		_rigidbody.AddForce((direction + Vector3.up) * speed * inputPositionDifference.y);
 
 		isHolding = false;
 		isThrown = true;
 
-		if (_rigidbody)
+		if (_rigidbody) {
 			Invoke("ReadyBall", resetBallAfterSeconds);
+		}			
 	}
-
-
-
 	void ReadyBall() {
 		CancelInvoke();
-
 		Vector3 screenPosition = new Vector3(0.5f, 0.1f, ballStartZ);
 
 		transform.position = Camera.main.ViewportToWorldPoint(screenPosition);

@@ -13,7 +13,7 @@ public class PlaySoundOnHit : MonoBehaviour {
 		source.clip = clip;
 	}
 
-	void OnCollisionEnter()  //Plays Sound Whenever collision detected
+	void OnCollisionEnter()  // Çarpışma algılandıgında ses çalmaktadır.
 	{
 		source.Play();
 	}
