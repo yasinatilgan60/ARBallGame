@@ -20,6 +20,7 @@ public class ThrowControl : MonoBehaviour {
 	private Vector2 inputPositionPivot;
 	private Vector2 inputPositionDifference;
 	private RaycastHit raycastHit;
+
 	void Start() {
 		_rigidbody = GetComponent<Rigidbody>();
 		ReadyBall();
@@ -103,6 +104,7 @@ public class ThrowControl : MonoBehaviour {
 
 		if (isInitialized)
 			OnReset.Invoke();
+		
 	}
 
 	void OnTouch() {

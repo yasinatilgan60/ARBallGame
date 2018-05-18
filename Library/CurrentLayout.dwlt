@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 9}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -66,8 +66,8 @@ MonoBehaviour:
     y: 0
     width: 226
     height: 364
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 364
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
   controlID: 12
 --- !u!114 &5
@@ -117,7 +117,7 @@ MonoBehaviour:
     width: 1366
     height: 635
   m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
   controlID: 9
 --- !u!114 &6
@@ -141,7 +141,7 @@ MonoBehaviour:
     width: 1366
     height: 635
   m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 10
 --- !u!114 &7
@@ -162,8 +162,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 635
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -217,7 +217,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &10
 MonoBehaviour:
@@ -280,7 +280,7 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 635
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 11
@@ -428,19 +428,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/ARPlayBall/Scripts
+    - Assets/Resources
   m_ViewMode: 1
   m_StartGridSize: 41
   m_LastFolders:
-  - Assets/ARPlayBall/Scripts
+  - Assets/Resources
   m_LastFoldersGridSize: 41
   m_LastProjectPath: "C:\\Users\\At\u0131lgan\\Documents\\bitirmeproje"
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: 762a0000
-    m_LastClickedID: 10870
-    m_ExpandedIDs: 00000000a6250000882a0000b22a0000dc2a0000282b00002a2b0000862b00008a2b00002a2c00007c2c0000ac2c0000b82c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 295}
+    m_SelectedIDs: de2c0000
+    m_LastClickedID: 11486
+    m_ExpandedIDs: 00000000a82500008e2a0000bc2a0000ea2a00003a2b00003c2b00009a2b0000a02b00004e2c0000a02c0000d22c0000de2c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -468,7 +468,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a6250000882a0000b22a0000dc2a0000282b00002a2b0000862b00008a2b00002a2c00007c2c0000ac2c0000b82c0000
+    m_ExpandedIDs: 00000000a82500008e2a0000bc2a0000ea2a00003a2b00003c2b00009a2b0000a02b00004e2c0000a02c0000d22c0000de2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -496,7 +496,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300007428000084280000d4250000ac250000a24b0000f02500002e2700006a490000ca5f0000d2250000ac2a000000000000
+    m_ExpandedInstanceIDs: c62300007428000084280000d4250000ac250000a24b0000f02500002e2700006a490000ca5f0000d2250000ac2a00009e2a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -549,7 +549,7 @@ MonoBehaviour:
     y: 92
     width: 275
     height: 614
-  m_ScrollPosition: {x: 0, y: 1398.9551}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -173
@@ -584,9 +584,9 @@ MonoBehaviour:
     height: 343
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe4b0000
-    m_LastClickedID: 19454
-    m_ExpandedIDs: 46bbfdff08bcfdff08bdfdff0ebdfdff16bdfdff20bdfdff90fbffffe6fbffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 6466ffff5a67ffff5868ffff6068ffff6868ffff7468ffff0289ffff90a7ffff68bcffff58c2ffffbacaffffe0d6ffff0ae8ffff00e9fffffee9ffff06eaffff0eeaffff1aeaffffe6fbffff00000000fa41000004420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -636,14 +636,14 @@ MonoBehaviour:
     width: 859
     height: 343
   m_SceneLighting: 1
-  lastFramingTime: 414.95495277431144
+  lastFramingTime: 1104.9716449148245
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3616217, y: 4.6136336, z: -0.0000047683716}
+    m_Target: {x: -0.00000044703484, y: 0.000013560057, z: -0.0000032484531}
     speed: 2
-    m_Value: {x: -0.3616217, y: 4.6136336, z: -0.0000047683716}
+    m_Value: {x: -0.00000044703484, y: 0.000013560057, z: -0.0000032484531}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -666,18 +666,18 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: -1, z: 0, w: 0}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0, y: 1, z: -0, w: -0}
+    m_Value: {x: 0, y: 0, z: 0, w: -0.99999994}
   m_Size:
-    m_Target: 14.2618885
+    m_Target: 2.3512452
     speed: 2
-    m_Value: 14.2618885
+    m_Value: 2.3512452
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_LastSceneViewRotation: {x: -0.06226686, y: 0.88976157, z: 0.1276395, w: 0.43376893}
+  m_LastSceneViewRotation: {x: 0.08717229, y: -0.89959055, z: 0.21045254, w: 0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
